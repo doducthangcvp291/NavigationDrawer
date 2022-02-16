@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintCircleRadius="5dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/no1"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/renum"
+        app:layout_constraintEnd_toStartOf="@+id/no2" />
+
+    <Button
+        android:id="@+id/renum"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="+/-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/n0" />
+
+    <Button
+        android:id="@+id/n0"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/dot" />
+
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/equal" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="="
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/no2"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/n0"
+        app:layout_constraintEnd_toStartOf="@+id/no3" />
+
+    <Button
+        android:id="@+id/no3"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/dot"
+        app:layout_constraintEnd_toStartOf="@+id/add" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/equal"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/no4"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no1"
+        app:layout_constraintEnd_toStartOf="@+id/no5" />
+
+    <Button
+        android:id="@+id/no5"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no2"
+        app:layout_constraintEnd_toStartOf="@+id/no6" />
+
+    <Button
+        android:id="@+id/no6"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="6"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no3"
+        app:layout_constraintEnd_toStartOf="@+id/aub" />
+
+    <Button
+        android:id="@+id/aub"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/no7"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no4"
+        app:layout_constraintEnd_toStartOf="@+id/no8" />
+
+    <Button
+        android:id="@+id/no8"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="8"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no5"
+        app:layout_constraintEnd_toStartOf="@+id/no9" />
+
+    <Button
+        android:id="@+id/no9"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="9"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no6"
+        app:layout_constraintEnd_toStartOf="@+id/mu" />
+
+    <Button
+        android:id="@+id/mu"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="X"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/aub"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no8"
+        app:layout_constraintEnd_toStartOf="@+id/del" />
+
+    <Button
+        android:id="@+id/del"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="del"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no9"
+        app:layout_constraintEnd_toStartOf="@+id/di" />
+
+    <Button
+        android:id="@+id/di"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="/"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mu"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/CE"
+        android:layout_width="101dp"
+        android:layout_height="70dp"
+        android:text="CE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/no7"
+        app:layout_constraintEnd_toStartOf="@+id/C" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="0dp"
+        android:background="#d3d3d3"
+        android:gravity="bottom|right"
+        android:text="0"
+        android:textSize="88sp"
+        app:layout_constraintBottom_toTopOf="@+id/del"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/His"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:gravity="bottom|right"
+        android:text=""
+        android:background="#d3d3d3"
+        android:textSize="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/ans"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
